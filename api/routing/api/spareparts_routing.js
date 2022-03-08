@@ -1,0 +1,13 @@
+const express = require("express");
+const router = express.Router();
+const controller = require("../../controller/spareparts_controller");
+router.post("/getSparepartsTableList", controller.getSparepartsTableList);
+router.post("/getSparepartsTableById", controller.getSparepartsTableById);
+router.post("/createSparepartsTable", controller.createSparepartsTable);
+router.post("/editSparepartsTable", controller.editSparepartsTable);
+router.post("/deleteSparepartsTable", controller.deleteSparepartsTable);
+router.post("/getEmployeeDropDown", controller.getEmployeeDropDown);
+router.post("/getUnitDropDown", controller.getUnitDropDown);
+router.post("/getPurchaseHeaderDropDown", controller.getPurchaseHeaderDropDown);
+router.post("/getStatusDropDown", controller.getStatusDropDown);
+module.exports = router;

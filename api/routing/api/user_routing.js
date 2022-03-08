@@ -1,0 +1,13 @@
+const express = require("express");
+const router = express.Router();
+const controller = require("../../controller/user_controller");
+router.post("/getUserTableList", controller.getUserTableList);
+router.post("/getUserTableById", controller.getUserTableById);
+router.post("/createUserTable", controller.createUserTable);
+router.post("/editUserTable", controller.editUserTable);
+router.post("/deleteUserTable", controller.deleteUserTable);
+router.post("/getEmployeeDropDown", controller.getEmployeeDropdown);
+router.post("/getRoleDropDown", controller.getRoleDropdown);
+router.post("/getSubscribeDropDown", controller.getSubscribeDropdown);
+router.post("/UpdateSettings", controller.editUserTable);
+module.exports = router;

@@ -1,0 +1,12 @@
+const express = require("express");
+const router = express.Router();
+const controller = require("../../controller/education_controller");
+router.post("/getEducationTableList", controller.getEducationTableList);
+router.post("/getEducationTableById", controller.getEducationTableById);
+router.post("/createEducationTable", controller.createEducationTable);
+router.post("/editEducationTable", controller.editEducationTable);
+router.post("/deleteEducationTable", controller.deleteEducationTable);
+router.post("/getCountryDropDown", controller.getCountryDropdown);
+router.post("/getProvinceDropDown", controller.getProvinceDropdown);
+router.post("/getEmployeeDropDown", controller.getEmployeeDropDown);
+module.exports = router;

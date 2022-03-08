@@ -1,0 +1,11 @@
+const express = require("express");
+const router = express.Router();
+const controller = require("../../controller/job_level_controller");
+router.post("/getJobLevelTableList", controller.getJobLevelTableList);
+router.post("/getJobLevelTableById", controller.getJobLevelTableById);
+router.post("/createJobLevelTable", controller.createJobLevelTable);
+router.post("/editJobLevelTable", controller.editJobLevelTable);
+router.post("/deleteJobLevelTable", controller.deleteJobLevelTable);
+router.post("/getPositionDropDown", controller.getPositionDropdown);
+router.post("/getDepartmentDropDown", controller.getDepartmentDropdown);
+module.exports = router;
